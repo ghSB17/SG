@@ -1,0 +1,98 @@
+body {
+    background-color: lightgray; 
+    animation: mymove 5s infinite;
+    animation-direction: alternate;
+    height: 100%;
+}
+@-webkit-keyframes mymove {
+
+    0%   {background-color: #EAEDED;}
+    50%  {background-color: #A9CCE3;}
+    100%  {background-color: #7FB3D5;}
+    
+}
+
+@keyframes mymove {
+
+    0%   {background-color: #EAEDED;}
+    50%  {background-color: #A9CCE3;}
+    100%  {background-color: #7FB3D5;}
+    
+}
+
+p { 
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif, 'sans-serif';
+}
+.fontPB, .fontP, a {
+    font-family:'Paprika','Ribeye','Sansita',  'sans-serif';
+    color: black;
+} 
+.fontPB {
+    font-size: xx-large;
+    font-weight:bolder;
+}
+.bgBlueGray {
+    background: linear-gradient(#bdbdbd, lightblue);
+}
+.bgGrayBlue {
+    background: linear-gradient(lightblue, #bdbdbd);
+}
+.imgAboutMe {
+    width: 75%;
+}
+.imgPortfolio {
+    width: 90%;
+    height: 90%;
+}
+.imgSocial {
+    width: 70px;
+    height: 70px;
+}
+.posY65 {
+    margin-top: 60%;
+}
+.transbox {
+    padding-top: 3%;
+    padding-bottom: 3%;
+    border: 2px solid #efefef;
+    background-color: #ffffff;
+    font-weight: bolder;
+    color: #0a0a0a;
+    font-family:'Paprika','Ribeye','Sansita',  'sans-serif';
+    text-align: center;
+    opacity: .5;
+}
+.classInfo {
+    position: absolute;
+    font-family:'Paprika','Ribeye','Sansita',  'sans-serif';
+    color: black;
+    display: none;
+    font-weight: bolder;
+    font-size: 150%;
+    text-align: center;
+    margin: 10%;
+    opacity: .7;
+    padding-top: 25%;
+    width: 80%;
+    height: 80%;
+    background: linear-gradient(lightblue, #bdbdbd);
+}
+
+@media screen and (max-width:980px) {
+    .imgAboutMe {
+        width: 75%;
+    }
+}
+@media screen and (max-width:768px) {
+    .imgAboutMe {
+        width: 100%;
+    }
+}
+@media screen and (max-width:640px) {
+    .imgAboutMe {
+        width: 100%;
+    }
+    .fontP {
+        display: inline;
+    }
+}
